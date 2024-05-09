@@ -26,11 +26,7 @@ a {
 
 header {
   /* position: absolute; */
-  margin-bottom:2.5% ;
-}
-
-.profile{
-  
+  margin-bottom: 2.5%;
 }
 
 .avatar {
@@ -38,15 +34,15 @@ header {
   padding: 5px;
   /*position: relative;*/
 }
-.personal-info{
+.personal-info {
   background-color: aquamarine;
   /* position: relative; */
   /* padding: 2%; */
 }
 
-#ProfileNavAvatar{
+#ProfileNavAvatar {
   display: inline-block;
-  vertical-align:bottom;
+  vertical-align: bottom;
   position: absolute;
   width: 50px;
   top: 0px;
