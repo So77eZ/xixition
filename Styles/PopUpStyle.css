@@ -1,0 +1,112 @@
+.AddActivity{
+  margin-top: 40px;
+  text-align: center;
+}
+.AddActivity a {
+  font-family: Montserrat;
+  background-color: bisque;
+  padding: 20px 50px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.pop_up{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 2;
+}
+
+.pop_up_container{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.pop_up_body{
+  margin: auto;
+  border-radius: 20px;
+  /* border: 4px solid transparent;
+  border-image: linear-gradient(to right, darkblue, darkorchid) 1; */
+  width: calc(500px - 10px);
+  height: 250px;
+  background-color: white;
+  text-align: center;
+  position: relative;
+  padding: 50px 10px 150px 10px;
+}
+
+.pop_up_body::before{
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  bottom: -5px;
+  right: -5px;
+  background: radial-gradient(circle, rgba(93,0,250,0.5) 0%, rgba(215,11,202,0.5) 100%);
+  border-radius: 20px;
+  z-index: -1;
+}
+
+@media (max-width: 500){
+  .pop_up_body {
+    width: calc(100% - 10px);
+  }  
+}
+
+.pop_up_body label{
+  font-size: 28px;
+  font-family: Montserrat;
+  font-weight: 600;
+  background-image: radial-gradient(circle, rgba(93,0,250,0.5) 0%, rgba(215,11,202,0.5) 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-bottom: 40px;
+}
+
+.pop_up_body input{
+  display: block;
+  margin:auto auto auto auto;
+  width: 330px;
+  padding: 17px 20px;
+  background: radial-gradient(circle, rgba(93,0,250,0.5) 0%, rgba(215,11,202,0.5) 100%);
+  border-radius: 15px;
+  border: none;
+  font-size: 18px;
+  font-family: Montserrat;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 40px;
+}
+
+.pop_up_body textarea{
+  display: block;
+  margin: 25px auto 0px auto;
+  width: 400px;
+  font-size: 28px;
+  font-family: Montserrat;
+  font-weight: 600;
+  color: #22262d;
+  margin-bottom: 40px; 
+}
+
+#description{
+  font-family: Montserrat;
+  font-size: 18px;
+  background: radial-gradient(circle, rgba(93,0,250,0.5) 0%, rgba(215,11,202,0.5) 100%);
+  color: #22262d; 
+}
+
+.pop_up_body_close{
+  font-size: 28px;
+  font-family: Montserrat;
+  font-weight: 600;
+  color: #1f5dc9;
+  margin-bottom: 40px;
+}

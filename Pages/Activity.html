@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../Styles/ProfileStyle.css">
+  <link rel="stylesheet" href="../Styles/PopUpStyle.css">
+
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+            <li><a href="../Pages/MainPage.html">Главная страница</a></li>
+            <li><a href="../Pages/News.html">Новости</a></li>
+            <li><a href="../Pages/Activity.html">Деятельность</a></li>
+            <li><a href="../Pages/Vanacy.html">Вакансии</a></li>
+            <li><a href="../Pages/Events.html">Мероприятия</a></li>
+            <li><a href="../Pages/OnlineMeets.html">Онлайн-встречи</a></li>
+            <li><img id="ProfileNavAvatar" src="../src/Profile.svg" alt="Profile"><a href="../Pages/Profile.html">Мой профиль</a></li>
+        </ul>
+    </nav>
+  </header>
+  <h3>Activity</h3>
+  <form action="/submit_form" method="post">
+    <label for="achievement_title">Заголовок достижения:</label><br>
+    <input type="text" id="achievement_title" name="achievement_title"><br><br>
+    
+    <label for="description">Описание:</label><br>
+    <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
+    
+    <label for="date_achieved">Дата получения:</label><br>
+    <input type="date" id="date_achieved" name="date_achieved"><br><br>
+    
+    <label for="category">Категория достижения:</label><br>
+    <select id="category" name="category">
+        <option value="награда">Награда</option>
+        <option value="сертификат">Сертификат</option>
+        <option value="участие в мероприятии">Участие в мероприятии</option>
+    </select><br><br>
+    
+    <input type="submit" value="Отправить">
+  </form>
+
+<div class="AddActivity">
+  <a href="#" id="AddActivity_pop_up">Добавить мероприятие</a>
+</div>
+
+<div class="pop_up">
+  <div class="pop_up_container">
+    <div class="pop_up_body">
+      <form action="/submit_form" method="post">
+        <label for="achievement_title">Заголовок достижения:</label><br><br>
+        <input type="text" id="achievement_title" name="achievement_title" placeholder="Диплом">
+        
+        <label for="description">Описание:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50" 
+        placeholder="Диплом победителей XXIII-го Интернет-Чемпионата по банковскому делу и финансам"></textarea><br><br>
+        
+        <label for="date_achieved">Дата получения:</label><br>
+        <input type="date" id="date_achieved" name="date_achieved"><br><br>
+        
+        <label for="category">Категория достижения:</label><br>
+        <select id="category" name="category">
+            <option value="награда">Диплом</option>
+            <option value="награда">Приз</option>
+            <option value="награда">Стипендия</option>
+            <option value="сертификат">Сертификат</option>
+            <option value="участие в мероприятии">Участие в мероприятии</option>
+        </select><br><br>
+        
+        <input type="submit" value="Отправить">
+        <!-- <button></button> -->
+      </form>
+      <div class="pop_up_close">&#10006</div>  
+    </div>
+  </div>
+</div>
+
+<script src="../ActivityScript.js"></script>
+
+</body>
+</html>
