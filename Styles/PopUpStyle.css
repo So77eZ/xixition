@@ -4,7 +4,11 @@
 }
 .AddActivity a {
   font-family: Montserrat;
-  background-color: bisque;
+  background: radial-gradient(
+    circle,
+    rgba(93, 0, 250, 0.5) 0%,
+    rgba(215, 11, 202, 0.5) 100%
+  );
   padding: 20px 50px;
   border-radius: 10px;
   text-decoration: none;
@@ -31,10 +35,12 @@
     rgba(215, 11, 202, 0.5) 100%
   );
   border-radius: 25px;
+  width: 30px;
+  height: 30px;
   border-color: transparent;
   font-size: 20px;
-  position: relative;
-  right: -70px;
+  position: absolute;
+  right: 10px;
   cursor: pointer;
 }
 
@@ -51,6 +57,16 @@
   top: 0;
   background-color: rgba(0, 0, 0, 0.65);
   z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  /* transform: translateY(-44.5%) scale(0); */
+  transition: 0.4s ease-in;
+}
+
+.pop_up.active {
+  /* transform: translateY(0%) scale(100%); */
+  opacity: 1;
+  visibility: visible;
 }
 
 .pop_up_container {
@@ -62,6 +78,10 @@
 #category {
   margin-top: 10px;
   cursor: pointer;
+}
+
+::placeholder {
+  color: black;
 }
 
 .pop_up_body {
@@ -117,7 +137,7 @@
 .pop_up_body input {
   display: block;
   margin: auto;
-  width: 330px;
+  width: 370px;
   padding: 17px 20px;
   background: radial-gradient(
     circle,
@@ -157,8 +177,14 @@
 
 input[type="submit"] {
   font-size: 20px;
+  width: 150px;
   cursor: pointer;
 }
 input[type="date"] {
   cursor: pointer;
+  width: 370px;
+}
+
+#category {
+  width: 375px;
 }

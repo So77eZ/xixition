@@ -1,1 +1,19 @@
-тут какой-то текст
+Полезный код для емейла куда-то:
+
+<form id="contactForm">
+    <fieldset>
+        <label for="Name">Name</label>
+        <input id="contactName" type="text" />
+    </fieldset>
+
+    <fieldset>
+        <label for="Email">Email</label>
+        <input id="contactEmail" type="text" />
+    </fieldset>
+
+    <fieldset class="noHeight">
+        <textarea id="contactMessage" cols="20"></textarea>
+        <input id="contactSend" class="submit" type="submit" onclick="sendContactForm()" />
+    </fieldset>
+</form>        
+<small id="messageSent">Your message has been sent.</small>

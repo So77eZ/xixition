@@ -40,12 +40,12 @@
       <a href="#" id="AddActivity_pop_up">Добавить мероприятие</a>
     </div>
 
-    <div class="pop_up">
-      <div class="pop_up_container">
-        <div class="pop_up_body">
+    <div class="pop_up" id="pop_up">
+      <div class="pop_up_container" id="pop_up_container">
+        <div class="pop_up_body" id="pop_up_body">
           <form action="/submit_form" method="post">
+            <div class="POP_up_close" id="pop_up_close">&#10006</div>
             <label for="achievement_title">Заголовок достижения</label>
-            <button class="POP_up_close">&#10006</button>
             <input
               type="text"
               id="achievement_title"
@@ -77,12 +77,10 @@
             ><br /><br />
 
             <input type="submit" value="Отправить" />
-            <!-- <button></button> -->
           </form>
         </div>
       </div>
     </div>
-
     <script src="../ActivityScript.js"></script>
   </body>
 </html>
