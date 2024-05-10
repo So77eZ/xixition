@@ -8,6 +8,7 @@ nav {
   z-index: 999;
   display: table;
   border: 2px solid purple;
+  font-size: 20px;
 }
 
 a:hover {
@@ -16,7 +17,7 @@ a:hover {
   /* font-size: 18px; */
 }
 
-ul {
+.NavigatorUL {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
@@ -45,13 +46,14 @@ header {
   display: block;
 }
 
-#AvatatIMG {
-  /* position: relative;
-  display: block; */
+/* #AvatatIMG {
+  position: relative;
+  display: block;
   /* border-radius: 20px;
   top: 50px;
-  left: 50px; */
-}
+  left: 50px;
+  } 
+*/
 
 .Avatarimg {
   position: relative;
@@ -84,7 +86,7 @@ header {
     rgba(93, 0, 250, 0.5) 0%,
     rgba(215, 11, 202, 0.5) 100%
   );
-  display: block;
+  display: table;
   position: relative;
   margin-left: -8px;
   margin-top: -1px;
@@ -105,3 +107,9 @@ header {
   top: 0px;
   right: 10%;
 }
+
+/* .achievementsBlock {
+}
+
+.eventsBlock {
+} */

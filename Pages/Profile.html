@@ -10,7 +10,7 @@
   <body>
     <header>
       <nav>
-        <ul>
+        <ul class="NavigatorUL">
           <li><a href="../Pages/MainPage.html">Главная страница</a></li>
           <li><a href="../Pages/News.html">Новости</a></li>
           <li><a href="../Pages/Activity.html">Деятельность</a></li>
@@ -42,20 +42,42 @@
           <p>ВУЗ: ИвГУ</p>
           <p>Email: ivanov@example.com</p>
           <h2>Образование</h2>
-          <p>День рождения: 01.01.2000</p>
-          <p>Город: Иваново</p>
-          <p>ВУЗ: ИвГУ</p>
-          <p>Email: ivanov@example.com</p>
+          <p>Факультет:</p>
+          <p>Кафедра:</p>
+          <p>Направления подготовки:</p>
+          <p>Курс / группа:</p>
+          <p>Форма обучения: Очная</p>
+          <p>
+            Вид документа<input
+              type="text"
+              id="achievement_title"
+              name="achievement_title"
+              placeholder="Диплом"
+            />
+          </p>
         </div>
-        <div class="achievements-block">
+        <div class="achievementsBlock" style="display: inline">
+          <a href="#" class="AchiveAdd" id="AchiveAdd" style="float: right; transform: rotate(45deg);">&#10006</a>
           <h2>Достижения</h2>
-          <p>Награда за лучшую научную работу 2020 года</p>
+          <ul>
+            <li>Награда за лучшую научную работу 2020 года</li>
+            <li>Награда за лучшую научную работу 2021 года</li>
+            <li>Награда за лучшую научную работу 2022 года</li>
+            <li>Награда за лучшую научную работу 2023 года</li>
+          </ul>
         </div>
-        <div class="events-block">
+        <div class="eventsBlock" style="display: block">
+          <a href="#" class="EventAdd" id="EventAdd" style="float: right; transform: rotate(45deg);">&#10006</a>
           <h2>Мероприятия</h2>
-          <p>Участие в конференции "Инновации в сфере IT" 2021</p>
+          <ul>
+            <li><div><img src="../src/tayler.jpg"><p>Участие в конференции "Инновации в сфере IT" 2021</p></div></li>
+            <li><div><img src="../src/tayler.jpg"><p>Участие в конференции "Инновации в сфере IT" 2022</p></div></li>
+            <li><div><img src="../src/tayler.jpg"><p>Участие в конференции "Инновации в сфере IT" 2023</p></div></li>
+            <li><div><img src="../src/tayler.jpg"><p>Участие в конференции "Инновации в сфере IT" 2024</p></div></li>
+          </ul>
         </div>
       </div>
     </div>
+    <script src="../ProfileScript.js"></script>
   </body>
 </html>

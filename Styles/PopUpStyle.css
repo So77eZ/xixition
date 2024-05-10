@@ -188,3 +188,18 @@ input[type="date"] {
 #category {
   width: 375px;
 }
+
+.AchiveAdd {
+  color: blue;
+}
+.AchiveAdd.Added {
+  color: aquamarine;
+}
+
+.EventAdd {
+  color: blue;
+}
+
+.EventAdd.Added {
+  color: aquamarine;
+}
