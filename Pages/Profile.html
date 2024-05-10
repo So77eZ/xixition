@@ -1,49 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Профиль пользователя</title>
-    <link rel="stylesheet" href="../Styles/ProfileStyle.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../Styles/ProfileStyle.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="../Pages/MainPage.html">Главная страница</a></li>
-                <li><a href="../Pages/News.html">Новости</a></li>
-                <li><a href="../Pages/Activity.html">Деятельность</a></li>
-                <li><a href="../Pages/Vanacy.html">Вакансии</a></li>
-                <li><a href="../Pages/Events.html">Мероприятия</a></li>
-                <li><a href="../Pages/OnlineMeets.html">Онлайн-встречи</a></li>
-                <li><img id="ProfileNavAvatar" src="../src/Profile.svg" alt="Profile"><a href="../Pages/Profile.html">Мой профиль</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="../Pages/MainPage.html">Главная страница</a></li>
+          <li><a href="../Pages/News.html">Новости</a></li>
+          <li><a href="../Pages/Activity.html">Деятельность</a></li>
+          <li><a href="../Pages/Vanacy.html">Вакансии</a></li>
+          <li><a href="../Pages/Events.html">Мероприятия</a></li>
+          <li><a href="../Pages/OnlineMeets.html">Онлайн-встречи</a></li>
+          <li>
+            <a href="../Pages/Profile.html" class="text-with-image"
+              >Мой профиль</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <div class="profile">
-        <div class="avatar">
-            <img src="../src/tayler.jpg" alt="Аватар пользователя">
+      <img
+        src="../src/tayler.jpg"
+        class="Avatarimg"
+        id="AvatatIMG"
+        alt="Аватар пользователя"
+      />
+      <div class="personal-info">
+        <h1>Иванов Иван Иванович</h1>
+        <div class="data-block">
+          <h2>Личные данные</h2>
+          <p>День рождения: 01.01.2000</p>
+          <p>Город: Иваново</p>
+          <p>ВУЗ: ИвГУ</p>
+          <p>Email: ivanov@example.com</p>
+          <h2>Образование</h2>
+          <p>День рождения: 01.01.2000</p>
+          <p>Город: Иваново</p>
+          <p>ВУЗ: ИвГУ</p>
+          <p>Email: ivanov@example.com</p>
         </div>
-        <div class="personal-info">
-            <h1>Иванов Иван Иванович</h1>
-            <div class="data-block">
-                <h2>Личные данные</h2>
-                <p>День рождения: 01.01.2000</p>
-                <p>Город: Иваново</p>
-                <p>ВУЗ: ИвГУ</p>
-                <p>Email: ivanov@example.com</p>
-            </div>
-            <div class="achievements-block">
-                <h2>Достижения</h2>
-                <p>Награда за лучшую научную работу 2020 года</p>
-            </div>
-            <div class="events-block">
-                <h2>Мероприятия</h2>
-                <p>Участие в конференции "Инновации в сфере IT" 2021</p>
-            </div>
+        <div class="achievements-block">
+          <h2>Достижения</h2>
+          <p>Награда за лучшую научную работу 2020 года</p>
         </div>
+        <div class="events-block">
+          <h2>Мероприятия</h2>
+          <p>Участие в конференции "Инновации в сфере IT" 2021</p>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
