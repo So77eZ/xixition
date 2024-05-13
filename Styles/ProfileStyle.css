@@ -1,4 +1,4 @@
-nav {
+.Navigator {
   background-color: #ffffff;
   position: fixed;
   top: 0;
@@ -86,7 +86,7 @@ header {
     rgba(93, 0, 250, 0.5) 0%,
     rgba(215, 11, 202, 0.5) 100%
   );
-  display: table;
+  display: block;
   position: relative;
   margin-left: -8px;
   margin-top: -1px;
@@ -112,4 +112,60 @@ header {
 }
 
 .eventsBlock {
+} */
+
+.section {
+  position: relative;
+  min-height: 700px;
+  background: url("../src/mainPageBIM.jpg") no-repeat center top;
+  background-size: cover;
+}
+.section:before {
+  display: flex;
+  border-radius: 15px;
+  align-items: center;
+  margin-left: 150px;
+  margin-top: 150px;
+  content: "МЕЖВУЗОВСКИЙ КАМПУС – БУДУЩЕЕ НАУЧНОГО-ОБРАЗОВАТЕЛЬНОГО РАЗВИТИЯ И ПРЕДПРИНИМАТЕЛЬСТВА";
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 28.95%;
+  height: 254px;
+  background: rgba(208, 208, 208, 0.5);
+}
+
+.buttonLearnMore {
+  top: 410px;
+  display: flex;
+  margin-left: 150px;
+  border-radius: 15px;
+  /* position: relative; */
+  /* vertical-align: middle; */
+  position: absolute;
+  background: radial-gradient(
+    circle,
+    rgba(93, 0, 250, 1) 0%,
+    rgba(215, 11, 202, 1) 100%
+  );
+  width: 191px;
+  height: 32px;
+}
+
+.btnMrText {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+/* .buttonLearnMore:before {
+  left: 30px;
+  top: 3px;
 } */

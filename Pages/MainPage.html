@@ -1,25 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Main Page</title>
-  <link rel="stylesheet" href="../Styles/ProfileStyle.css">
-</head>
-<body>
-  <header>
-    <nav>
-        <ul>
-            <li><a href="../Pages/MainPage.html">Главная страница</a></li>
-            <li><a href="../Pages/News.html">Новости</a></li>
-            <li><a href="../Pages/Activity.html">Деятельность</a></li>
-            <li><a href="../Pages/Vanacy.html">Вакансии</a></li>
-            <li><a href="../Pages/Events.html">Мероприятия</a></li>
-            <li><a href="../Pages/OnlineMeets.html">Онлайн-встречи</a></li>
-            <li><img id="ProfileNavAvatar" src="../src/Profile.svg" alt="Profile"><a href="../Pages/Profile.html">Мой профиль</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="../Styles/ProfileStyle.css" />
+  </head>
+  <body style="display: flex; flex-direction: column">
+    <header>
+      <nav class="Navigator">
+        <ul class="NavigatorUL">
+          <li><a href="../Pages/MainPage.html">Главная страница</a></li>
+          <li><a href="../Pages/News.html">Новости</a></li>
+          <li><a href="../Pages/Activity.html">Деятельность</a></li>
+          <li><a href="../Pages/Vanacy.html">Вакансии</a></li>
+          <li><a href="../Pages/Events.html">Мероприятия</a></li>
+          <li><a href="../Pages/OnlineMeets.html">Онлайн-встречи</a></li>
+          <li><a href="../Pages/Profile.html">Мой профиль</a></li>
         </ul>
-    </nav>
-  </header>
-  <h3>MainPage</h3>
-</body>
+      </nav>
+    </header>
+    <div class="section" style="flex-grow: 1">
+      <div class="buttonLearnMore"><a href="#" class="btnMrText">learn more</a></div>
+      <p style="text-align: center">
+        <!-- <img src="../src/mainPageBIM.jpg" alt="BIM" /> -->
+      </p>
+    </div>
+    <div class="mainInfo" style="flex-grow: 1">
+      <div
+        class="News"
+        style="
+          float: left;
+          background-color: beige;
+          width: 33.3%;
+          text-align: center;
+        "
+      >
+        <span>Новости</span>
+      </div>
+      <div
+        class="UpgoingEvents"
+        style="
+          float: left;
+          background-color: bisque;
+          width: 66.7%;
+          text-align: center;
+        "
+      >
+        <span>Предстоящие события</span>
+      </div>
+    </div>
+    <footer
+      style="
+        text-align: center;
+        background-color: rgb(138, 149, 159);
+        height: 60px;
+        /* bottom: 0; */
+      "
+    >
+      <div>
+        <ul
+          type="circle"
+          style="
+            display: flex;
+            flex-direction: column;
+            float: left;
+            margin: auto;
+            font-size: 20px;
+          "
+        >
+          <li style="border-bottom: 2px solid black">Справка</li>
+          <li>Справка1</li>
+          <li>Справка2</li>
+        </ul>
+      </div>
+      <div style="font-size: 20px; display: block">
+        <p>Контакты</p>
+        <span
+          ><img src="https://vsekortiki.ru/img/vk.png" width="37px" alt="VK"
+        /></span>
+        <span
+          ><img
+            src="https://abrakadabra.fun/uploads/posts/2022-01/1642039222_2-abrakadabra-fun-p-ikonka-telegramma-chernaya-9.png"
+            width="37px"
+            alt="TG"
+        /></span>
+        <span
+          ><img
+            src="https://papik.pro/uploads/posts/2021-11/1636185957_5-papik-pro-p-logotip-diskorda-foto-5.png"
+            width="37px"
+            alt="Discord"
+        /></span>
+      </div>
+    </footer>
+  </body>
 </html>
